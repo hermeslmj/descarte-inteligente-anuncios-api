@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 const categoriasRoutes = require('./routes/categorias');
-/*
-const loginRoutes = require('./routes/login');*/
+const anunciosRoutes = require('./routes/anuncios');
+
 
 const APP_PORT = process.env.PORT || 3002;
 
@@ -41,7 +41,7 @@ app.use(express.json());
 
 
 app.use('/api/categorias', categoriasRoutes);
-/*app.use('/api/login', loginRoutes);*/
+app.use('/api/anuncios', anunciosRoutes);
 
 /**
  * Rota raiz
