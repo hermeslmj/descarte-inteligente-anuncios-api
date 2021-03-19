@@ -16,7 +16,7 @@ let options = {
           title: 'Descarte Inteligente - Anúncios',
           version: '1.0.0',
       },
-      host: 'localhost:' + APP_PORT,
+      host: 'localhost:' + 8000,
       basePath: '/',
       produces: [
           "application/json",
