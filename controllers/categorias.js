@@ -41,7 +41,7 @@ const buscarPorId = async (req, res) => {
       res.send(Categoria);
     }
     else{
-      res.status(404).send({ message: 'Usuário não encontrada com  id: ' + id });
+      res.status(404).send({ message: 'Categoria não encontrada com  id: ' + id });
     }
     
   } catch (error) {
@@ -64,7 +64,7 @@ const editar = async (req, res) => {
     res.status(200).send(CategoriaEditado);
 
   } catch (error) {
-    res.status(500).send({ message: 'Erro ao atualizar a Usuário id: ' + id });
+    res.status(500).send({ message: 'Erro ao atualizar a Categoria id: ' + id });
   }
 };
 
@@ -73,11 +73,11 @@ const remover = async (req, res) => {
 
   try {
     await Categoriaservico.remover(id);
-    res.send({ message: 'Usuário excluido com sucesso' });
+    res.send({ message: 'Categoria excluido com sucesso' });
   } catch (error) {
     res
       .status(500)
-      .send({ message: 'Nao foi possivel deletar o Usuário id: ' + id });
+      .send({ message: 'Nao foi possivel deletar o Categoria id: ' + id });
   }
 };
 
