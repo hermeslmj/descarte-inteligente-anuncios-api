@@ -7,7 +7,7 @@ const categoriasRoutes = require('./routes/categorias');
 const anunciosRoutes = require('./routes/anuncios');
 
 
-const APP_PORT = process.env.PORT || 3002;
+const APP_PORT = 3000;
 
 let options = {
   swaggerDefinition: {
