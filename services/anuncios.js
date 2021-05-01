@@ -4,6 +4,7 @@ async function criar(dados)
 {
     try
     {
+        dados.status = 1;
         const novoAnuncio = await AnunciosRepositorio.criar(dados);
         if(novoAnuncio) 
             return novoAnuncio;

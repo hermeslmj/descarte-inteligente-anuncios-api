@@ -7,6 +7,7 @@ const router = express.Router();
  * @property {string} titulo.required
  * @property {string} descricao.required
  * @property {string} categoria.required
+ * @property {string} publicado_por.required
  */
 
 
