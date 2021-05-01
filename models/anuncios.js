@@ -9,13 +9,26 @@ let schema = mongoose.Schema({
         type: String,
         required: true,
     },
-    created_at: { 
+    criado_em: { 
+        type: Date, 
+        default: Date.now
+    },
+    atualizado_em: { 
         type: Date, 
         default: Date.now
     },
     categoria: {
-        type: mongoose.Schema.Types.ObjectId
-    }   
+        type: mongoose.Schema.Types.ObjectId,
+        required: true
+    },
+    publicado_por: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+    },
+    status: {
+        type: Number,
+        required: true
+    }
 });
 
 
