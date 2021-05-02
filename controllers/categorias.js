@@ -9,7 +9,7 @@ const criar = async (req, res) => {
       });
     }
 
-    const novoCategoria = Categoriaservico.criar(req.body);
+    const novoCategoria = await Categoriaservico.criar(req.body);
     res.send(novoCategoria);
     
   } catch (error) {
