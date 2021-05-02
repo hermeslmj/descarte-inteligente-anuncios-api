@@ -9,7 +9,7 @@ const criar = async (req, res) => {
       });
     }
 
-    const novoAnuncios = Anunciosservico.criar(req.body);
+    const novoAnuncios = await Anunciosservico.criar(req.body);
     res.send(novoAnuncios);
     
   } catch (error) {
